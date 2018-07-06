@@ -1,0 +1,7 @@
+C:\Users\Caleb\source\repos\FacebookFriends\FacebookFriends\bin\Debug\FacebookFriends.exe.config
+C:\Users\Caleb\source\repos\FacebookFriends\FacebookFriends\bin\Debug\FacebookFriends.exe
+C:\Users\Caleb\source\repos\FacebookFriends\FacebookFriends\bin\Debug\FacebookFriends.pdb
+C:\Users\Caleb\source\repos\FacebookFriends\FacebookFriends\obj\Debug\FacebookFriends.csprojAssemblyReference.cache
+C:\Users\Caleb\source\repos\FacebookFriends\FacebookFriends\obj\Debug\FacebookFriends.csproj.CoreCompileInputs.cache
+C:\Users\Caleb\source\repos\FacebookFriends\FacebookFriends\obj\Debug\FacebookFriends.exe
+C:\Users\Caleb\source\repos\FacebookFriends\FacebookFriends\obj\Debug\FacebookFriends.pdb
