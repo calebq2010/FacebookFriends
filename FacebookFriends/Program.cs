@@ -12,25 +12,33 @@ namespace FacebookFriends
         {
             var prompt = "Please enter the names that liked your Facebook Post:";
             var facebookLikes = new List<string>();
-            
+
 
             Console.WriteLine(prompt);
             var answer = Console.ReadLine();
 
-
-            if (answer == "")
+            while(answer != "exit")
             {
-                Console.WriteLine("Display: ");
-            }else
-            {
-                facebookLikes.Add(answer);
+                Console.WriteLine(prompt);
+                answer = Console.ReadLine();
 
-                foreach (var like in facebookLikes)
+                if (answer == "")
                 {
-                    Console.WriteLine("In your list: " + like);
+                    Console.WriteLine("Display: ");
                 }
+                else
+                {
+                    facebookLikes.Add(answer);
 
+                    foreach (var like in facebookLikes)
+                    {
+                        Console.WriteLine("In your list: " + like);
+                    }
+
+                }
             }
+
+            
             
 
         }
