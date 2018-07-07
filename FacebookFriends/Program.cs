@@ -12,12 +12,10 @@ namespace FacebookFriends
         {
             var prompt = "Please enter the names that liked your Facebook Post:";
             var facebookLikes = new List<string>();
+            int totalLikes = 0;
+            string answer;
 
-
-            Console.WriteLine(prompt);
-            var answer = Console.ReadLine();
-
-            while(answer != "exit")
+            do
             {
                 Console.WriteLine(prompt);
                 answer = Console.ReadLine();
@@ -25,18 +23,45 @@ namespace FacebookFriends
                 if (answer == "")
                 {
                     Console.WriteLine("Display: ");
+                    break;
                 }
-                else
+                else if(facebookLikes.Count == 0)
                 {
                     facebookLikes.Add(answer);
 
                     foreach (var like in facebookLikes)
                     {
-                        Console.WriteLine("In your list: " + like);
+                        Console.WriteLine(like + " Likes your post");
+                        break;
                     }
 
                 }
+                else if(facebookLikes.Count == 1)
+                {
+                    facebookLikes.Add(answer);
+
+                    foreach (var like in facebookLikes)
+                    {
+                        Console.WriteLine(facebookLikes[0] + " and " + facebookLikes[1]  + " Like your post");
+                        break;
+                    }
+
+                    ++totalLikes;
+                }
+                else if (facebookLikes.Count > 1)
+                {
+                    facebookLikes.Add(answer);
+
+                    foreach (var like in facebookLikes)
+                    {
+                        Console.WriteLine(facebookLikes[0] + " , " + facebookLikes[1] + " and " + totalLikes + " others like your post");
+                        break;
+                    }
+
+                    ++totalLikes;
+                }
             }
+            while (answer != "exit");
 
             
             
